@@ -1,0 +1,43 @@
+# Aliseo.studio
+
+> Estudio canario de canciones personalizadas por encargo. Cada canción se escribe sobre la historia real del cliente, la canta una voz del catálogo (cada voz trae su género predeterminado) o la propia voz del cliente, y la produce un equipo humano con ayuda de inteligencia artificial. Aliseo.studio es un proyecto de TIDElabs.
+
+## Qué hacemos
+
+- Canciones únicas para bodas, cumpleaños, aniversarios, pedidas, jubilaciones, homenajes y empresas.
+- El proceso: el cliente cuenta su historia en el creador de la web (5 minutos), elige voz, aprueba la letra antes de producirse y recibe el audio en alta calidad con tarjeta de dedicatoria.
+- Corrección garantizada: sin letra aprobada por el cliente no se produce la versión final; si la letra no emociona, se reescribe sin coste.
+
+## Precios (cerrados, en euros)
+
+- Esencial: 25 € — canción personalizada completa, letra sobre tu historia, revisión de productor real.
+- Completa: 49 € — todo lo anterior + ajustar la letra antes de producir + tarjeta de dedicatoria diseñada.
+- Premium: 89 € — todo lo anterior + prioridad en la agenda + versión extra (acústica o instrumental).
+
+## Agenda y plazos (importante)
+
+- El estudio produce SOLO 8 canciones al mes. Las plazas se asignan por orden de encargo.
+- Cuando el mes se llena, se abre lista de espera para el mes siguiente (sin coste por estar en lista; se paga al entrar en agenda).
+- Una vez la plaza entra en el estudio, la producción tarda de 3 a 7 días. Se recomienda encargar con la máxima antelación posible.
+- Las canciones se entregan con licencia clara de uso personal, sin SGAE.
+
+## Las voces
+
+- Alisio — género: balada cálida. Voz profunda y serena.
+- Brisa — género: pop luminoso. Voz alegre y cristalina.
+- Marea — género: acústico íntimo. Voz suave y cercana.
+- Catálogo completo: existen más voces (Calima, Levante, Vendaval y nuevas), cada una con su género predeterminado; se puede pedir el catálogo completo al estudio.
+- Tu propia voz: el cliente puede aportar una grabación (suya o de otra persona) y el estudio produce la canción con esa voz.
+
+## Contacto
+
+- Web: https://tidelabstech.github.io/Aliseo/
+- Email: hola@aliseo.studio
+- Ubicación: Canarias, España
+
+## Enlaces
+
+- [Inicio y creador de encargos](https://tidelabstech.github.io/Aliseo/)
+- [Aviso legal](https://tidelabstech.github.io/Aliseo/aviso-legal.html)
+- [Privacidad](https://tidelabstech.github.io/Aliseo/privacidad.html)
+- [Política de cookies](https://tidelabstech.github.io/Aliseo/cookies.html)
