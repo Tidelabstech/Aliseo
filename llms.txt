@@ -1,6 +1,6 @@
 # Aliseo.studio
 
-> Estudio canario de canciones personalizadas por encargo. Cada canción se escribe sobre la historia real del cliente, la canta una voz del catálogo (cada voz trae su género predeterminado) o la propia voz del cliente, y la produce un equipo humano con ayuda de inteligencia artificial. Aliseo.studio es un proyecto de TIDElabs.
+> Estudio canario de canciones personalizadas por encargo. Cada canción se escribe sobre la historia real del cliente, la canta una de las 21 voces del catálogo (se eligen a oído, por su preescucha, sin etiquetas de género) o la propia voz del cliente, y la produce un equipo humano con ayuda de inteligencia artificial. Aliseo.studio es un proyecto de TIDElabs.
 
 ## Qué hacemos
 
@@ -23,21 +23,19 @@
 
 ## Las voces
 
-- Alisio — género: balada cálida. Voz profunda y serena.
-- Brisa — género: pop luminoso. Voz alegre y cristalina.
-- Marea — género: acústico íntimo. Voz suave y cercana.
-- Catálogo completo: existen más voces (Calima, Levante, Vendaval y nuevas), cada una con su género predeterminado; se puede pedir el catálogo completo al estudio.
+- El catálogo tiene 21 voces, numeradas de la 01 a la 21. Las tres primeras son las de la casa: Alisio (voz 01), Brisa (voz 02) y Marea (voz 03).
+- Sin géneros ni etiquetas: cada voz se presenta con su preescucha (un minuto cantando el himno del estudio) y el cliente elige a oído, la que le gusta.
 - Tu propia voz: el cliente puede aportar una grabación (suya o de otra persona) y el estudio produce la canción con esa voz.
 
 ## Contacto
 
-- Web: https://tidelabstech.github.io/Aliseo/
+- Web: https://aliseo.studio/
 - Email: hola@aliseo.studio
 - Ubicación: Canarias, España
 
 ## Enlaces
 
-- [Inicio y creador de encargos](https://tidelabstech.github.io/Aliseo/)
-- [Aviso legal](https://tidelabstech.github.io/Aliseo/aviso-legal.html)
-- [Privacidad](https://tidelabstech.github.io/Aliseo/privacidad.html)
-- [Política de cookies](https://tidelabstech.github.io/Aliseo/cookies.html)
+- [Inicio y creador de encargos](https://aliseo.studio/)
+- [Aviso legal](https://aliseo.studio/aviso-legal.html)
+- [Privacidad](https://aliseo.studio/privacidad.html)
+- [Política de cookies](https://aliseo.studio/cookies.html)

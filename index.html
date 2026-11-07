@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"https://tidelabstech.github.io/Aliseo/#org","name":"Aliseo.studio","url":"https://tidelabstech.github.io/Aliseo/","logo":"https://tidelabstech.github.io/Aliseo/brand/mark-web.jpg","email":"hola@aliseo.studio","description":"Estudio de canciones personalizadas creadas con inteligencia artificial y producidas por personas. Un proyecto de TIDElabs en Canarias.","address":{"@type":"PostalAddress","addressRegion":"Canarias","addressCountry":"ES"}},
 {"@type":"WebSite","@id":"https://tidelabstech.github.io/Aliseo/#web","url":"https://tidelabstech.github.io/Aliseo/","name":"Aliseo.studio","inLanguage":"es","publisher":{"@id":"https://tidelabstech.github.io/Aliseo/#org"}},
-{"@type":"Service","@id":"https://tidelabstech.github.io/Aliseo/#servicio","name":"Canciones personalizadas por encargo","serviceType":"Composición y producción musical personalizada","provider":{"@id":"https://tidelabstech.github.io/Aliseo/#org"},"areaServed":"ES","description":"Canciones únicas escritas sobre la historia del cliente para bodas, cumpleaños, aniversarios, pedidas y homenajes. Cada voz del catálogo trae su género predeterminado; también es posible producir con la voz del propio cliente. Agenda limitada a 8 producciones al mes, asignadas por orden de encargo, con lista de espera.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Niveles de encargo","itemListElement":[
+{"@type":"Service","@id":"https://tidelabstech.github.io/Aliseo/#servicio","name":"Canciones personalizadas por encargo","serviceType":"Composición y producción musical personalizada","provider":{"@id":"https://tidelabstech.github.io/Aliseo/#org"},"areaServed":"ES","description":"Canciones únicas escritas sobre la historia del cliente para bodas, cumpleaños, aniversarios, pedidas y homenajes. Eliges la voz a oído entre las 21 del catálogo, escuchando su preescucha y sin etiquetas; también es posible producir con la voz del propio cliente. Agenda limitada a 8 producciones al mes, asignadas por orden de encargo, con lista de espera.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Niveles de encargo","itemListElement":[
 {"@type":"Offer","name":"Esencial","price":"25","priceCurrency":"EUR","description":"La canción, directa al corazón: canción personalizada completa, letra escrita sobre tu historia y revisión de productor real."},
 {"@type":"Offer","name":"Completa","price":"49","priceCurrency":"EUR","description":"La experiencia de regalo entera: todo lo de Esencial, ver y ajustar la letra antes de producir y tarjeta de dedicatoria diseñada."},
 {"@type":"Offer","name":"Premium","price":"89","priceCurrency":"EUR","description":"Para los días que no se repiten: todo lo de Completa, prioridad en la agenda y versión extra (acústica o instrumental)."}]}},
@@ -223,6 +223,33 @@ footer .logo .mark{width:46px;height:46px}
 .singer .elegir:hover{background:var(--night3);color:var(--gold)}
 .singer .playbtn{padding:.58rem 1.05rem;font-size:.88rem}
 .cantantes .nota{margin-top:1.6rem;font-size:.9rem;color:var(--ink-soft)}
+.dial{background:linear-gradient(160deg,var(--night) 0%,var(--night3) 100%);color:var(--cream);border-radius:20px;padding:1.8rem 1.8rem 1.4rem;box-shadow:0 24px 54px rgba(13,31,28,.28);max-width:640px;margin:0 auto}
+.dial-top{display:flex;justify-content:space-between;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(247,241,229,.6)}
+#dialState{color:var(--gold);text-transform:none;letter-spacing:0;font-size:.9rem}
+.dial h3{font-size:2rem;color:#fff;margin:.5rem 0 .2rem}
+#dialTrait{color:rgba(247,241,229,.75);font-style:italic;margin:0 0 1rem}
+.dial-bar{height:8px;background:rgba(247,241,229,.16);border-radius:99px;cursor:pointer;overflow:hidden}
+.dial-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),#F2C66D)}
+.dial-times{display:flex;justify-content:space-between;font-size:.78rem;color:rgba(247,241,229,.55);margin-top:.4rem}
+.dial-btns{display:flex;gap:.7rem;align-items:center;margin-top:1.1rem;flex-wrap:wrap}
+.dial-play{flex:none;width:58px;height:58px;border-radius:50%;border:none;background:var(--gold);color:var(--night);font-size:1.25rem;cursor:pointer;box-shadow:0 10px 24px rgba(201,143,45,.4)}
+.dial-like{flex:1;background:var(--gold);color:var(--night);border:none;border-radius:99px;padding:.95rem 1.2rem;font-weight:700;font-size:1rem;cursor:pointer}
+.dial-next{background:transparent;color:var(--cream);border:1.5px solid rgba(247,241,229,.4);border-radius:99px;padding:.95rem 1.2rem;font-size:1rem;cursor:pointer}
+.dial-studio{display:block;margin:1rem auto 0;background:none;border:none;color:rgba(247,241,229,.65);text-decoration:underline;cursor:pointer;font-size:.92rem}
+.dial-strip{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1.2rem;justify-content:center}
+.dial-strip button{width:2.3rem;height:2.3rem;border-radius:50%;border:1px solid rgba(247,241,229,.25);background:transparent;color:rgba(247,241,229,.75);cursor:pointer;font-size:.8rem}
+.dial-strip button.on{border-color:var(--gold);color:var(--gold)}
+.dial-strip button.sel{background:var(--gold);color:var(--night);border-color:var(--gold);font-weight:700}
+.vozbox{background:rgba(13,31,28,.05);border:1px solid rgba(13,31,28,.14);border-radius:12px;padding:.8rem 1rem;margin-bottom:.9rem}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-top:1.2rem}
+.vmini h3{font-size:1.25rem;margin:.1rem 0 .5rem}
+.singer .track{background:rgba(13,31,28,.06);border:1px solid rgba(13,31,28,.14);border-radius:12px;padding:.55rem .7rem;margin:.7rem 0}
+.singer .track .tplay{background:var(--gold);color:var(--night)}
+.singer .track .tinfo b{color:var(--ink)}
+.singer .track .tinfo span{color:var(--ink-soft)}
+.singer .track .ttime{color:var(--ink-soft)}
+.singer .track .tbar{background:rgba(13,31,28,.15)}
+.singer.selcard{border-color:var(--gold);box-shadow:0 18px 44px rgba(201,143,45,.28)}
 .singer.special{grid-column:1/-1;background:linear-gradient(120deg,var(--night) 0%,var(--night3) 100%);border-color:var(--gold);color:var(--cream)}
 .singer.special h3{color:var(--gold)}
 .singer.special .trait{color:#F3E9CF}
@@ -459,7 +486,7 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
   <div class="wrap">
     <p class="kicker rv">Escucha el viento</p>
     <h2 class="rv">El himno, por nuestras voces</h2>
-    <p class="lead rv">Esto no es una maqueta: es el himno real del estudio, cantado por nuestras tres voces. Debajo tienes un avance del género de cada una, generado en tu navegador. Cada encargo lo compone y produce nuestro equipo sobre tu historia.</p>
+    <p class="lead rv">Esto no es una maqueta: es el himno real del estudio, cantado por nuestras tres voces principales. Cada encargo lo compone y produce nuestro equipo sobre tu historia.</p>
 
     <div class="himno rv">
       <h3>🎵 Esto sí es Aliseo de verdad: nuestro himno</h3>
@@ -469,27 +496,6 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
         <div class="track" data-track data-dur="2:31"><button class="tplay" type="button" aria-label="Escuchar el himno con Alisio">▶</button><div class="tinfo"><b>El himno · con Alisio</b><span>2:31 · la versión completa, con su intro y su cierre de eslogan</span><div class="tbar"><div class="tfill"></div></div></div><span class="ttime">0:00 / 2:31</span><audio preload="metadata" src="demos/himno-completo.mp3"></audio></div>
         <div class="track" data-track data-dur="1:31"><button class="tplay" type="button" aria-label="Escuchar el himno con Marea">▶</button><div class="tinfo"><b>El himno · con Marea</b><span>1:31 · la versión ambiente, el fondo sonoro de la casa</span><div class="tbar"><div class="tfill"></div></div></div><span class="ttime">0:00 / 1:31</span><audio preload="metadata" src="demos/himno-ambiente.mp3"></audio></div>
       </div>
-    </div>
-    <div class="moods">
-      <article class="mood rv" data-mood="balada">
-        <h3>🌅 Alisio<span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></h3>
-        <p>Su género de fábrica: la <b>balada cálida</b>. Piano y cuerdas suaves para decir lo importante despacio. Avance de estilo interactivo — su voz real canta el himno, arriba.</p>
-        <button class="playbtn" data-play="balada">▶ Escuchar</button>
-      </article>
-      <article class="mood rv" data-mood="pop">
-        <h3>☀️ Brisa<span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></h3>
-        <p>Su género de fábrica: el <b>pop luminoso</b>. Energía de celebración para brindar bailando. Avance de estilo interactivo — su voz real canta el himno, arriba.</p>
-        <button class="playbtn" data-play="pop">▶ Escuchar</button>
-      </article>
-      <article class="mood rv" data-mood="acustico">
-        <h3>🌿 Marea<span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></h3>
-        <p>Su género de fábrica: el <b>acústico íntimo</b>. Guitarra cercana y voz al oído. Avance de estilo interactivo — su voz real canta el himno, arriba.</p>
-        <button class="playbtn" data-play="acustico">▶ Escuchar</button>
-      </article>
-    </div>
-    <div class="wavebox rv">
-      <canvas id="wave" width="1040" height="86" aria-hidden="true"></canvas>
-      <p class="wavenote" id="waveNote">El viento está en calma. Elige un humor y dale al play.</p>
     </div>
   </div>
 </section>
@@ -601,42 +607,24 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
 <section class="cantantes" id="cantantes">
   <div class="wrap">
     <p class="kicker rv">Nuestros cantantes</p>
-    <h2 class="rv">Tres tonos, un solo corazón</h2>
-    <p class="lead rv">Como dice el himno: tres voces principales para elegir en un clic. Cada una trae su género de fábrica — tú eliges la voz y el género viene con ella. Escucha su estilo, siente cuál encaja con tu historia y márcala en el encargo. Y si ninguna es LA voz… sigue bajando: hay catálogo, y hasta tu propia voz.</p>
-    <div class="singrid">
-      <article class="singer rv">
-        <span class="viento">Voz masculina · grave</span>
-        <h3>Alisio</h3>
-        <p class="genre">Su género · balada cálida</p>
-        <p class="trait">Profundo y sereno, como el viento que nunca falla.</p>
-        <p>Para homenajes con peso: padres, abuelos, despedidas que merecen verdad. Su grave pone la piel de gallina en los versos y sostiene el estribillo sin gritar.</p>
-        <div class="srow">
-          <button class="playbtn" data-play="balada" type="button">▶ Su estilo</button>
-          <a class="elegir" href="#crear" data-cantante="Alisio">Elegir a Alisio</a>
-        </div>
-      </article>
-      <article class="singer rv">
-        <span class="viento">Voz femenina · luminosa</span>
-        <h3>Brisa</h3>
-        <p class="genre">Su género · pop luminoso</p>
-        <p class="trait">Alegre y cristalina: entra como la luz de la mañana.</p>
-        <p>La de las celebraciones felices: cumpleaños, pedidas y bodas con risa. Si la historia se cuenta sonriendo, la canta Brisa.</p>
-        <div class="srow">
-          <button class="playbtn" data-play="pop" type="button">▶ Su estilo</button>
-          <a class="elegir" href="#crear" data-cantante="Brisa">Elegir a Brisa</a>
-        </div>
-      </article>
-      <article class="singer rv">
-        <span class="viento">Voz femenina · suave</span>
-        <h3>Marea</h3>
-        <p class="genre">Su género · acústico íntimo</p>
-        <p class="trait">Dulce e íntima: canta como quien arrulla.</p>
-        <p>Para lo que se escucha en bajito: nacimientos, cartas a una hija, dedicatorias de madrugada. Marea acerca la canción al oído y al corazón.</p>
-        <div class="srow">
-          <button class="playbtn" data-play="acustico" type="button">▶ Su estilo</button>
-          <a class="elegir" href="#crear" data-cantante="Marea">Elegir a Marea</a>
-        </div>
-      </article>
+    <h2 class="rv">Veintiún tonos, un solo corazón</h2>
+    <p class="lead rv">Un solo reproductor y dos botones, como un dial de radio: dale al play y las voces suenan una tras otra — las tres de la casa primero, y luego todo el muestrario. Cuando una te diga algo, pulsa <b>♥ Esta me gusta</b> y queda elegida; si no, <b>Siguiente</b> y a por otra. Sin géneros, sin etiquetas: a oído. ¿Prefieres no elegir? El estudio elige por ti. Y al final del todo… tu propia voz.</p>
+    <div class="dial rv">
+      <div class="dial-top"><span id="dialCount">Voz 1 de 21</span><span id="dialState"></span></div>
+      <h3 id="dialName">Voz 01 · Alisio</h3>
+      <p id="dialTrait">Profundo y sereno, como el viento que nunca falla.</p>
+      <div class="dial-bar" id="dialBar"><div class="dial-fill" id="dialFill"></div></div>
+      <div class="dial-times"><span id="dialCur">0:00</span><span id="dialDur">2:31</span></div>
+      <audio id="dialAudio" preload="metadata" src="voces/voz-01-alisio.mp3"></audio>
+      <div class="dial-btns">
+        <button class="dial-play" id="dialPlay" type="button" aria-label="Escuchar las voces">▶</button>
+        <button class="dial-like" id="dialLike" type="button">♥ Esta me gusta</button>
+        <button class="dial-next" id="dialNext" type="button">Siguiente →</button>
+      </div>
+      <button class="dial-studio" id="dialStudio" type="button">Que elija el estudio por mí</button>
+      <div class="dial-strip" id="dialStrip"></div>
+    </div>
+    <div class="singrid" style="margin-top:1.2rem">
     <article class="singer special rv">
         <span class="viento">La opción que nadie espera</span>
         <h3>Tu propia voz</h3>
@@ -647,11 +635,6 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
         </div>
       </article>
     </div>
-    <div class="catalogo rv">
-      <p>📚 <b>Catálogo completo:</b> detrás de las tres voces principales hay más cantantes de la casa — Calima (cálida), Levante (intenso), Vendaval (fiesta) y las nuevas que van naciendo. Si buscas un color concreto, te mandamos sus demos.</p>
-      <a href="mailto:hola@aliseo.studio?subject=Quiero%20el%20cat%C3%A1logo%20completo%20de%20voces%20de%20Aliseo&amp;body=Hola%2C%20quiero%20escuchar%20el%20cat%C3%A1logo%20completo%20de%20cantantes.">Pedir el catálogo completo →</a>
-    </div>
-    <p class="nota rv">Los botones reproducen el <b>estilo</b> de cada voz en la demo interactiva. Las demos con su voz real — cada una cantando el himno de la casa — llegan a estas tarjetas en cuanto estén generadas.</p>
   </div>
 </section>
 <section class="crear" id="crear">
@@ -693,15 +676,12 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
         <p class="hint">Este es el corazón de la canción: cómo se conocieron, los lugares, la frase que siempre dice, ese recuerdo que hay que mencionar sí o sí.</p>
         <div class="field"><label for="fHistoria">Vuestra historia</label><textarea id="fHistoria" placeholder="Ej.: Se conocieron en una guagua a Las Palmas en 2019. Él siempre dice «sin prisa, pero sin pausa». Cada verano vuelven al mismo chiringuito de…"></textarea></div>
         <div class="field" style="margin-top:1.1rem"><label>¿Quién la canta?</label>
+          <div class="vozbox">Tu voz: <b id="wzVozTxt">aún sin elegir</b> · <a href="#cantantes">escuchar el dial ↑</a></div>
           <div class="chips" id="chCantante">
-            <button class="chip" type="button">Alisio · balada</button>
-            <button class="chip" type="button">Brisa · pop</button>
-            <button class="chip" type="button">Marea · acústico</button>
-            <button class="chip" type="button">🎙️ Mi propia voz</button>
-            <button class="chip" type="button">Que elija el estudio</button>
+            <button class="chip" type="button" data-voz="Mi propia voz">🎙️ Mi propia voz</button>
+            <button class="chip" type="button" data-voz="Que elija el estudio">Que elija el estudio</button>
           </div>
-          <p class="hint" style="margin-top:.6rem">¿Buscas otro color? Tenemos catálogo completo: pídelo y te mandamos más voces.</p>
-        </div>
+          <p class="hint" style="margin-top:.6rem">La voz se elige arriba, en el dial: cada voz suena entera, y tú cortas cuando lo tengas claro — esta me gusta, o siguiente.</p>
       </div>
 
       <div class="wstep" data-step="4">
@@ -731,6 +711,7 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
           <p class="nota">Pago de demostración del prototipo — en producción este botón abre el pago seguro de Stripe. Garantía Aliseo: si la letra no te emociona, la reescribimos sin coste.</p>
         </div>
         <div class="sendrow">
+          <a class="btn btn-ghost" id="wzWa" href="#" target="_blank" rel="noopener">💬 Enviar por WhatsApp</a>
           <a class="btn btn-ghost" id="wzMail" href="#">✉️ Prefiero enviarlo por email</a>
           <button class="btn btn-ghost" id="wzCopy" type="button">📋 Copiar mi encargo</button>
         </div>
@@ -846,105 +827,8 @@ document.querySelectorAll(".fitem > button").forEach(function(b){
     if(!was) item.classList.add("open");
   });
 });
-/* ---------- audio generativo: el viento ---------- */
-var AV = (function(){
-  var ctx=null, master=null, analyser=null, timer=null, current=null, step=0, nextTime=0;
-  var MOODS = {
-    balada:  { bpm:62,  wave:"triangle", chords:[[261.63,329.63,392.00,493.88],[220.00,261.63,329.63,392.00],[174.61,220.00,261.63,349.23],[196.00,246.94,293.66,392.00]], scale:[523.25,587.33,659.25,783.99,880.00], pad:.16, mel:.20, note:"🌅 Balada cálida sonando… piano suave, cuerdas y aire." },
-    pop:     { bpm:104, wave:"sine",     chords:[[261.63,329.63,392.00],[196.00,246.94,293.66],[220.00,261.63,329.63],[174.61,220.00,261.63]], scale:[523.25,659.25,783.99,1046.50,587.33], pad:.12, mel:.22, note:"☀️ Pop luminoso sonando… celebración en estado puro." },
-    acustico:{ bpm:76,  wave:"sine",     chords:[[146.83,220.00,293.66,349.23],[116.54,174.61,233.08,293.66],[174.61,261.63,349.23,440.00],[130.81,196.00,261.63,329.63]], scale:[587.33,698.46,880.00,1046.50,523.25], pad:.10, mel:.24, note:"🌿 Acústico íntimo sonando… guitarra cercana, casi al oído." }
-  };
-  function ensure(){
-    if(ctx) return;
-    ctx = new (window.AudioContext||window.webkitAudioContext)();
-    master = ctx.createGain(); master.gain.value = .9;
-    analyser = ctx.createAnalyser(); analyser.fftSize = 256;
-    var delay = ctx.createDelay(1); delay.delayTime.value = .27;
-    var fb = ctx.createGain(); fb.gain.value = .24;
-    var wet = ctx.createGain(); wet.gain.value = .18;
-    master.connect(analyser); analyser.connect(ctx.destination);
-    master.connect(delay); delay.connect(fb); fb.connect(delay); delay.connect(wet); wet.connect(ctx.destination);
-  }
-  function tone(freq, t, dur, type, vol, dest){
-    var o = ctx.createOscillator(), g = ctx.createGain();
-    o.type = type; o.frequency.value = freq;
-    g.gain.setValueAtTime(0.0001, t);
-    g.gain.exponentialRampToValueAtTime(vol, t + .04);
-    g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-    o.connect(g); g.connect(dest || master);
-    o.start(t); o.stop(t + dur + .05);
-  }
-  function schedule(){
-    var M = MOODS[current], spb = 60 / M.bpm, bar = spb * 4;
-    while(nextTime < ctx.currentTime + .35){
-      var chord = M.chords[Math.floor(step/8) % M.chords.length];
-      if(step % 8 === 0){
-        chord.forEach(function(f){ tone(f, nextTime, bar*1.05, "sine", M.pad*.5); tone(f*1.005, nextTime, bar*1.05, "triangle", M.pad*.22); });
-      }
-      if(current === "acustico"){
-        var arp = chord[step % chord.length] * 2;
-        tone(arp, nextTime, spb*.9, M.wave, M.mel*.8);
-      } else if(step % 2 === 0 && Math.random() < .82){
-        var n = M.scale[Math.floor(Math.random()*M.scale.length)];
-        tone(n, nextTime, spb*1.7, M.wave, M.mel);
-        if(Math.random() < .3) tone(n*1.5, nextTime + spb*.5, spb*.8, M.wave, M.mel*.45);
-      }
-      step++; nextTime += spb / 2;
-    }
-  }
-  function draw(){
-    var cv = document.getElementById("wave"), c2 = cv.getContext("2d");
-    var data = new Uint8Array(analyser ? analyser.frequencyBinCount : 0);
-    (function loop(){
-      requestAnimationFrame(loop);
-      c2.clearRect(0,0,cv.width,cv.height);
-      if(analyser && current){
-        analyser.getByteFrequencyData(data);
-        var n = 56, w = cv.width / n;
-        for(var i=0;i<n;i++){
-          var v = data[Math.floor(i*1.6)] / 255, h = Math.max(3, v * 78);
-          c2.fillStyle = i % 5 === 0 ? "#E07840" : "#E8B34B";
-          c2.globalAlpha = .35 + v*.65;
-          c2.beginPath();
-          c2.roundRect(i*w + 2, (86-h)/2, w-4, h, 3);
-          c2.fill();
-        }
-        c2.globalAlpha = 1;
-      } else {
-        c2.strokeStyle = "rgba(232,179,75,.4)"; c2.lineWidth = 2; c2.beginPath();
-        for(var x=0;x<=cv.width;x+=8){ var y = 43 + Math.sin(x*.02 + performance.now()*.0004) * 7; x===0 ? c2.moveTo(x,y) : c2.lineTo(x,y); }
-        c2.stroke();
-      }
-    })();
-  }
-  draw();
-  function stopAll(){
-    if(timer){ clearInterval(timer); timer = null; }
-    current = null;
-    document.querySelectorAll(".mood").forEach(function(m){ m.classList.remove("playing"); });
-    document.querySelectorAll("[data-play]").forEach(function(b){ b.textContent = b.getAttribute("data-label") || "▶ Escuchar"; });
-    document.getElementById("waveNote").textContent = "El viento está en calma. Elige un humor y dale al play.";
-  }
-  function play(name){
-    if(window.__hpStop) window.__hpStop(-1);
-    ensure();
-    if(ctx.state === "suspended") ctx.resume();
-    if(current === name){ stopAll(); return; }
-    stopAll();
-    current = name; step = 0; nextTime = ctx.currentTime + .06;
-    timer = setInterval(schedule, 90);
-    document.querySelector('.mood[data-mood="'+name+'"]').classList.add("playing");
-    document.querySelectorAll('[data-play="'+name+'"]').forEach(function(b){ b.textContent = "❚❚ Detener"; });
-    document.getElementById("waveNote").textContent = MOODS[name].note;
-  }
-  return { play: play };
-})();
-document.querySelectorAll("[data-play]").forEach(function(b){
-  b.setAttribute("data-label", b.textContent);
-  b.addEventListener("click", function(){ AV.play(b.getAttribute("data-play")); });
-});
 /* ---------- creador ---------- */
-var WZ = { step:1, ocasion:"", estilo:"", cantante:"" };
+var WZ = { step:1, ocasion:"", cantante:"" };
 var STEPNAMES = {1:"La ocasión",2:"Los protagonistas",3:"La historia y la voz",4:"Resumen y envío"};
 function chipGroup(id, key){
   var box = document.getElementById(id);
@@ -952,10 +836,88 @@ function chipGroup(id, key){
     var b = e.target.closest(".chip"); if(!b) return;
     box.querySelectorAll(".chip").forEach(function(c){ c.classList.remove("sel"); });
     b.classList.add("sel");
-    WZ[key] = b.textContent.replace(/^[^A-Za-zÀ-ÿ]+/, "").trim();
+    WZ[key] = b.getAttribute("data-voz") || b.textContent.replace(/^[^A-Za-zÀ-ÿ]+/, "").trim();
   });
 }
 chipGroup("chOcasion","ocasion"); chipGroup("chCantante","cantante");
+document.getElementById("chCantante").addEventListener("click", function(){
+  var t = document.getElementById("wzVozTxt"); if(t && WZ.cantante) t.textContent = WZ.cantante;
+});
+/* ---------- el dial de voces ---------- */
+var DIAL = [
+  ["Voz 01 · Alisio","voz-01-alisio","2:31","Profundo y sereno, como el viento que nunca falla."],
+  ["Voz 02 · Brisa","voz-02-brisa","1:27","Alegre y cristalina: entra como la luz de la mañana."],
+  ["Voz 03 · Marea","voz-03-marea","1:31","Dulce e íntima: canta como quien arrulla."]
+];
+for(var dn = 4; dn <= 21; dn++){ DIAL.push(["Voz " + (dn < 10 ? "0" : "") + dn, "voz-" + (dn < 10 ? "0" : "") + dn, "", ""]); }
+(function(){
+  var a = document.getElementById("dialAudio"); if(!a) return;
+  var idx = 0, strip = document.getElementById("dialStrip");
+  DIAL.forEach(function(v, k){
+    var b = document.createElement("button"); b.type = "button"; b.textContent = (k + 1 < 10 ? "0" : "") + (k + 1);
+    b.addEventListener("click", function(){ load(k, true); });
+    strip.appendChild(b);
+  });
+  function fmt(s){ s = Math.max(0, Math.floor(s || 0)); return Math.floor(s / 60) + ":" + ("0" + (s % 60)).slice(-2); }
+  function load(k, play){
+    idx = k; var v = DIAL[k];
+    a.src = "voces/" + v[1] + ".mp3";
+    document.getElementById("dialName").textContent = v[0];
+    document.getElementById("dialCount").textContent = "Voz " + (k + 1) + " de 21";
+    document.getElementById("dialTrait").textContent = v[3] || "Del muestrario de la casa: escúchala y decide a oído.";
+    document.getElementById("dialDur").textContent = v[2] || "";
+    document.getElementById("dialState").textContent = "";
+    document.getElementById("dialFill").style.width = "0%";
+    document.getElementById("dialCur").textContent = "0:00";
+    strip.querySelectorAll("button").forEach(function(b, bk){ b.classList.toggle("on", bk === k); });
+    if(play) a.play();
+  }
+  window.__dialLoad = load;
+  a.addEventListener("timeupdate", function(){
+    if(a.duration) document.getElementById("dialFill").style.width = (a.currentTime / a.duration * 100) + "%";
+    document.getElementById("dialCur").textContent = fmt(a.currentTime);
+    if(a.duration && !DIAL[idx][2]) document.getElementById("dialDur").textContent = fmt(a.duration);
+  });
+  a.addEventListener("play", function(){ document.getElementById("dialPlay").textContent = "⏸"; });
+  a.addEventListener("pause", function(){ document.getElementById("dialPlay").textContent = "▶"; });
+  a.addEventListener("ended", function(){
+    if(idx < DIAL.length - 1) load(idx + 1, true);
+    else document.getElementById("dialState").textContent = "Fin del muestrario — ¿ninguna? Que elija el estudio.";
+  });
+  document.getElementById("dialPlay").addEventListener("click", function(){ if(a.paused) a.play(); else a.pause(); });
+  document.getElementById("dialNext").addEventListener("click", function(){ if(idx < DIAL.length - 1) load(idx + 1, !a.paused); });
+  document.getElementById("dialBar").addEventListener("click", function(e){
+    var r = this.getBoundingClientRect(); if(a.duration) a.currentTime = a.duration * (e.clientX - r.left) / r.width;
+  });
+  document.getElementById("dialLike").addEventListener("click", function(){
+    a.pause(); vozElegida(DIAL[idx][0]);
+    document.getElementById("dialState").textContent = "✓ Es tu voz — sigue en el formulario ↓";
+    strip.querySelectorAll("button").forEach(function(b, bk){ b.classList.toggle("sel", bk === idx); });
+  });
+  document.getElementById("dialStudio").addEventListener("click", function(){
+    a.pause(); vozElegida("Que elija el estudio");
+    document.getElementById("dialState").textContent = "✓ El estudio elige por ti";
+  });
+  strip.querySelectorAll("button").forEach(function(b, bk){ b.classList.toggle("on", bk === 0); });
+})();
+document.addEventListener("play", function(e){
+  document.querySelectorAll("audio").forEach(function(o){ if(o !== e.target) o.pause(); });
+}, true);
+function vozElegida(v){
+  WZ.cantante = v;
+  var t = document.getElementById("wzVozTxt"); if(t) t.textContent = v;
+}
+document.querySelectorAll("[data-cantante]").forEach(function(a){
+  a.addEventListener("click", function(){
+    var v = a.getAttribute("data-cantante");
+    vozElegida(v);
+    document.querySelectorAll("#chCantante .chip").forEach(function(c){
+      c.classList.toggle("sel", c.getAttribute("data-voz") === v);
+    });
+    document.querySelectorAll(".singer.selcard").forEach(function(x){ x.classList.remove("selcard"); });
+    var card = a.closest(".singer"); if(card) card.classList.add("selcard");
+  });
+});
 document.querySelectorAll("[data-oca]").forEach(function(a){
   a.addEventListener("click", function(){
     var v = a.getAttribute("data-oca");
@@ -985,7 +947,7 @@ function wzTexto(){
   L.push("Ocasión: " + (WZ.ocasion || "—"));
   L.push("Para: " + (para || "—"));
   L.push("De parte de: " + (de || "—"));
-  L.push("Voz: " + (WZ.cantante || "—") + " · Género: el de su voz");
+  L.push("Voz: " + (WZ.cantante || "—"));
   L.push("");
   L.push("La historia:");
   L.push(hist || "(aún por contar)");
@@ -996,6 +958,7 @@ function wzResumen(){
   document.getElementById("wzResumen").textContent = t;
   var subj = "Mi canción — " + (WZ.ocasion || "encargo") + " · Aliseo.studio";
   document.getElementById("wzMail").href = "mailto:hola@aliseo.studio?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(t);
+  document.getElementById("wzWa").href = "https://wa.me/34000000000?text=" + encodeURIComponent(t);
 }
 document.getElementById("wzNext").addEventListener("click", function(){
   if(WZ.step === 1 && !WZ.ocasion){
@@ -1082,16 +1045,7 @@ document.getElementById("wzPayBtn").addEventListener("click", function(){
 });
 
 
-document.querySelectorAll("[data-cantante]").forEach(function(a){
-  a.addEventListener("click", function(){
-    var v = a.getAttribute("data-cantante");
-    document.querySelectorAll("#chCantante .chip").forEach(function(c){
-      var limpio = c.textContent.replace(/^[^A-Za-zÀ-ÿ]+/, "").trim();
-      if(limpio.indexOf(v) === 0){ c.classList.add("sel"); WZ.cantante = c.textContent.trim(); }
-      else c.classList.remove("sel");
-    });
-  });
-});
+/* (manejador data-cantante: el de arriba, junto a chipGroup) */
 
 /* ---------- cortes del himno en el hero ---------- */
 (function(){

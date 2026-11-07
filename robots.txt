@@ -32,4 +32,4 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
-Sitemap: https://tidelabstech.github.io/Aliseo/sitemap.xml
+Sitemap: https://aliseo.studio/sitemap.xml
