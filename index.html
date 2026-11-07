@@ -752,12 +752,13 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
         <div class="resumen" id="wzResumen"></div>
         <div class="sendrow" style="flex-direction:column;align-items:stretch">
           <a class="btn btn-gold" id="wzWa" href="#" target="_blank" rel="noopener" style="width:100%;justify-content:center">💬 Enviar mi encargo por WhatsApp</a>
+          <a class="btn btn-dark" id="wzPay" href="https://buy.stripe.com/fZuaEWgvWcCc1f35ZS8AE01" target="_blank" rel="noopener" style="width:100%;justify-content:center">🔒 Reservar mi plaza · 44 €</a>
           <div style="display:flex;gap:.7rem;flex-wrap:wrap">
             <a class="btn btn-ghost" id="wzMail" href="#">✉️ Prefiero enviarlo por email</a>
             <button class="btn btn-ghost" id="wzCopy" type="button">📋 Copiar mi encargo</button>
           </div>
         </div>
-        <p class="nota">Al enviarlo se abre WhatsApp con tu encargo completo ya escrito: solo tienes que darle a enviar. El estudio te confirma la agenda y el pago en esa misma conversación. Garantía Aliseo: si la letra no te emociona, la reescribimos sin coste. Y tu historia es solo tuya: jamás compartimos las canciones de nuestros clientes.</p>
+        <p class="nota">Dos pasos y la plaza es tuya: primero envíanos el encargo por WhatsApp (llega ya escrito, solo dale a enviar) y después reserva con el pago seguro de Stripe. El estudio te lo confirma todo en la misma conversación. Garantía Aliseo: si la letra no te emociona, la reescribimos sin coste. Y tu historia es solo tuya: jamás compartimos las canciones de nuestros clientes.</p>
       </div>
 
       <p class="wz-aviso" id="wzAviso" style="display:none"></p>
@@ -1010,6 +1011,13 @@ function wzResumen(){
   var subj = "Mi canción — " + (WZ.ocasion || "encargo") + " (" + (WZ.tier || "") + ") · Aliseo.studio";
   document.getElementById("wzMail").href = "mailto:hola@aliseo.studio?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(t);
   document.getElementById("wzWa").href = "https://wa.me/34631466099?text=" + encodeURIComponent(t);
+  wzPayUpd();
+}
+var PAYLINKS = { "25": "https://buy.stripe.com/4gMcN4djK59Ke1Pcog8AE00", "44": "https://buy.stripe.com/fZuaEWgvWcCc1f35ZS8AE01", "88": "https://buy.stripe.com/4gMdR82F60Tu2j7gEw8AE02" };
+function wzPayUpd(){
+  var b = document.getElementById("wzPay"); if(!b) return;
+  b.href = PAYLINKS[String(WZ.price)] || PAYLINKS["44"];
+  b.textContent = "\uD83D\uDD12 Reservar mi plaza \u00b7 " + WZ.price + " \u20ac";
 }
 function wzAvisar(txt, el){
   var av = document.getElementById("wzAviso");
