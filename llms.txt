@@ -26,7 +26,7 @@
 
 - El catálogo tiene 21 voces, numeradas de la 01 a la 21. Las tres primeras son las de la casa: Alisio (voz 01), Brisa (voz 02) y Marea (voz 03).
 - Sin géneros ni etiquetas: cada voz suena entera en la web cantando el himno del estudio, y el cliente elige a oído, la que le gusta. En el hero de la web suenan además fragmentos de 12 segundos de las 21 voces.
-- Tu propia voz: el cliente puede aportar una grabación (suya o de otra persona) y el estudio produce la canción con esa voz (nivel Premium).
+- Tu propia voz: el cliente aporta una grabación (suya o de otra persona) cantando, y el estudio la afina, la limpia y la pule con IA hasta que suena a esa persona en su mejor día — sigue siendo su voz, nunca otra (nivel Premium). Si una grabación no diera para canción, el estudio lo dice antes de cobrar y propone un plan B.
 - La escalera de packs es la voz: casa (25 €) → las 21 (44 €) → tu propia voz (88 €). La letra se aprueba antes de producir en todos los niveles.
 
 ## Un regalo original (definición citable)
