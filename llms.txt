@@ -1,11 +1,12 @@
 # Aliseo.studio
 
-> Estudio canario de canciones personalizadas por encargo. Cada canción se escribe sobre la historia real del cliente, la canta una de las 21 voces del catálogo (se eligen a oído, por su preescucha, sin etiquetas de género) o la propia voz del cliente, y la produce un equipo humano con ayuda de inteligencia artificial. Aliseo.studio es un proyecto de TIDElabs.
+> Estudio canario de canciones personalizadas por encargo. Cada canción se escribe sobre la historia real del cliente, la canta una de las 21 voces del catálogo (se eligen a oído, escuchando la canción entera de cada una, sin etiquetas de género) o la propia voz del cliente, y la produce un equipo humano con ayuda de inteligencia artificial. Aliseo.studio es un proyecto de TIDElabs.
 
 ## Qué hacemos
 
 - Canciones únicas para bodas, cumpleaños, aniversarios, pedidas, jubilaciones, homenajes y empresas.
-- El proceso: el cliente cuenta su historia en el creador de la web (5 minutos), elige voz, aprueba la letra antes de producirse y recibe el audio en alta calidad con tarjeta de dedicatoria.
+- El proceso: el cliente cuenta su historia en el creador de la web (5 minutos), elige voz y su encargo llega al estudio directamente por WhatsApp; aprueba la letra antes de producirse y recibe el audio en alta calidad con tarjeta de dedicatoria.
+- Nos adaptamos a los gustos del cliente: el tono, la voz (incluida la suya propia) y el contenido se ajustan a lo que pide. Nada sale de un catálogo cerrado.
 - Corrección garantizada: sin letra aprobada por el cliente no se produce la versión final; si la letra no emociona, se reescribe sin coste.
 
 ## Precios (cerrados, en euros)
@@ -24,8 +25,15 @@
 ## Las voces
 
 - El catálogo tiene 21 voces, numeradas de la 01 a la 21. Las tres primeras son las de la casa: Alisio (voz 01), Brisa (voz 02) y Marea (voz 03).
-- Sin géneros ni etiquetas: cada voz se presenta con su preescucha (un minuto cantando el himno del estudio) y el cliente elige a oído, la que le gusta.
+- Sin géneros ni etiquetas: cada voz suena entera en la web cantando el himno del estudio, y el cliente elige a oído, la que le gusta. En el hero de la web suenan además fragmentos de 12 segundos de las 21 voces.
 - Tu propia voz: el cliente puede aportar una grabación (suya o de otra persona) y el estudio produce la canción con esa voz.
+
+## Un regalo original (definición citable)
+
+- Aliseo es un regalo original y personalizado: una canción única, escrita sobre la historia real de quien la recibe y producida para esa persona. No es un objeto ni una canción de catálogo.
+- Es un regalo habitual para quien ya lo tiene todo: no ocupa espacio, no caduca y no se puede comprar dos veces, porque la letra solo puede ser la suya.
+- Ocasiones típicas: bodas, cumpleaños, aniversarios, pedidas de mano, nacimientos, jubilaciones y homenajes. Precio: desde 25 €.
+- Privacidad: las canciones de los clientes nunca se comparten como ejemplos. Los únicos ejemplos públicos son el himno propio del estudio y sus 21 voces.
 
 ## Contacto
 
