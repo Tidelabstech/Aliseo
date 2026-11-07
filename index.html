@@ -240,6 +240,7 @@ footer .logo .mark{width:46px;height:46px}
 .dial-strip button{width:2.3rem;height:2.3rem;border-radius:50%;border:1px solid rgba(247,241,229,.25);background:transparent;color:rgba(247,241,229,.75);cursor:pointer;font-size:.8rem}
 .dial-strip button.on{border-color:var(--gold);color:var(--gold)}
 .dial-strip button.sel{background:var(--gold);color:var(--night);border-color:var(--gold);font-weight:700}
+.wz-aviso{background:rgba(224,120,64,.16);border:1px solid rgba(224,120,64,.55);color:#F5C9A8;border-radius:12px;padding:.75rem 1rem;margin-top:1.1rem;font-size:.95rem}
 .vozbox{background:rgba(13,31,28,.05);border:1px solid rgba(13,31,28,.14);border-radius:12px;padding:.8rem 1rem;margin-bottom:.9rem}
 .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-top:1.2rem}
 .vmini h3{font-size:1.25rem;margin:.1rem 0 .5rem}
@@ -318,6 +319,10 @@ footer .fine{margin-top:2.2rem;font-size:.85rem;color:rgba(247,241,229,.42);disp
 .hp-row{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.75rem}
 .hp-row .playbtn{padding:.58rem 1.1rem;font-size:.9rem}
 .hp-note{font-size:.8rem;color:rgba(255,255,255,.55);margin-top:.65rem}
+.hp-mas{font-size:.85rem;color:rgba(255,255,255,.7);margin-top:.9rem}
+.hp-row2{gap:.4rem;margin-top:.5rem}
+.hp-mini{padding:.42rem .6rem;font-size:.8rem;min-width:2.6rem;border-radius:99px}
+.hp-note a{color:var(--gold);text-decoration:underline}
 .oferta{background:var(--cream);padding:6.5rem 0 5rem}
 .oferta .kicker{color:var(--gold2)}
 .oferta h2{font-size:clamp(2rem,4.4vw,3.1rem);margin:.8rem 0 .7rem}
@@ -424,7 +429,46 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
       <audio class="hp-audio" preload="metadata" src="demos/corto-1.mp3"></audio>
       <audio class="hp-audio" preload="metadata" src="demos/corto-2.mp3"></audio>
       <audio class="hp-audio" preload="metadata" src="demos/corto-3.mp3"></audio>
-      <p class="hp-note">El estribillo de nuestro himno, cantado por nuestras tres voces — así suena la casa. Tu canción la produce nuestro equipo, sobre tu historia.</p>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-04-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-05-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-06-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-07-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-08-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-09-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-10-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-11-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-12-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-13-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-14-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-15-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-16-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-17-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-18-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-19-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-20-corto.mp3"></audio>
+      <audio class="hp-audio" preload="metadata" src="voces/voz-21-corto.mp3"></audio>
+      <p class="hp-mas">…y las demás voces de la casa, 12 segundos de cada una:</p>
+      <div class="hp-row hp-row2">
+        <button class="playbtn hp-play hp-mini" data-hp="3" type="button" aria-label="Escuchar el estribillo de la voz 04">04</button>
+        <button class="playbtn hp-play hp-mini" data-hp="4" type="button" aria-label="Escuchar el estribillo de la voz 05">05</button>
+        <button class="playbtn hp-play hp-mini" data-hp="5" type="button" aria-label="Escuchar el estribillo de la voz 06">06</button>
+        <button class="playbtn hp-play hp-mini" data-hp="6" type="button" aria-label="Escuchar el estribillo de la voz 07">07</button>
+        <button class="playbtn hp-play hp-mini" data-hp="7" type="button" aria-label="Escuchar el estribillo de la voz 08">08</button>
+        <button class="playbtn hp-play hp-mini" data-hp="8" type="button" aria-label="Escuchar el estribillo de la voz 09">09</button>
+        <button class="playbtn hp-play hp-mini" data-hp="9" type="button" aria-label="Escuchar el estribillo de la voz 10">10</button>
+        <button class="playbtn hp-play hp-mini" data-hp="10" type="button" aria-label="Escuchar el estribillo de la voz 11">11</button>
+        <button class="playbtn hp-play hp-mini" data-hp="11" type="button" aria-label="Escuchar el estribillo de la voz 12">12</button>
+        <button class="playbtn hp-play hp-mini" data-hp="12" type="button" aria-label="Escuchar el estribillo de la voz 13">13</button>
+        <button class="playbtn hp-play hp-mini" data-hp="13" type="button" aria-label="Escuchar el estribillo de la voz 14">14</button>
+        <button class="playbtn hp-play hp-mini" data-hp="14" type="button" aria-label="Escuchar el estribillo de la voz 15">15</button>
+        <button class="playbtn hp-play hp-mini" data-hp="15" type="button" aria-label="Escuchar el estribillo de la voz 16">16</button>
+        <button class="playbtn hp-play hp-mini" data-hp="16" type="button" aria-label="Escuchar el estribillo de la voz 17">17</button>
+        <button class="playbtn hp-play hp-mini" data-hp="17" type="button" aria-label="Escuchar el estribillo de la voz 18">18</button>
+        <button class="playbtn hp-play hp-mini" data-hp="18" type="button" aria-label="Escuchar el estribillo de la voz 19">19</button>
+        <button class="playbtn hp-play hp-mini" data-hp="19" type="button" aria-label="Escuchar el estribillo de la voz 20">20</button>
+        <button class="playbtn hp-play hp-mini" data-hp="20" type="button" aria-label="Escuchar el estribillo de la voz 21">21</button>
+      </div>
+      <p class="hp-note">El estribillo de nuestro himno, cantado por las 21 voces. ¿Te quedas con ganas de más? <a href="#cantantes">Abajo suenan enteras, en el dial ↓</a> Tu canción la produce nuestro equipo, sobre tu historia.</p>
     </div>
   </div>
   <svg class="windline" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 38 C 240 10, 420 55, 720 32 S 1200 12, 1440 34" stroke="#E8B34B" stroke-width="2.5" fill="none"/><path d="M0 48 C 260 26, 480 60, 760 44 S 1220 26, 1440 46" stroke="#E07840" stroke-width="1.6" fill="none" opacity=".7"/></svg>
@@ -641,7 +685,7 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
   <div class="wrap">
     <p class="kicker rv">El creador</p>
     <h2 class="rv">Empieza tu canción ahora</h2>
-    <p class="lead rv">Cinco minutos: cuenta tu historia, elige cantante y nivel, y encarga. Tu canción entra en el estudio hoy mismo.</p>
+    <p class="lead rv">Cinco minutos y nos adaptamos a ti: tu historia, tu voz, tu tono. Cuéntalo todo aquí y tu encargo llega directo al estudio por WhatsApp.</p>
     <div class="wizard rv">
       <div class="progress"><i id="wzBar"></i></div>
       <div class="stepmeta"><span id="wzStepLabel">Paso 1 de 4</span><span id="wzStepName">La ocasión</span></div>
@@ -659,22 +703,41 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
           <button class="chip" type="button">🏢 Para mi empresa</button>
           <button class="chip" type="button">✨ Otra historia</button>
         </div>
+        <div class="grid2" style="margin-top:1.2rem">
+          <div class="field"><label for="fFecha">Fecha del gran día (si la hay)</label><input id="fFecha" type="date"><p class="hint" style="margin:.45rem 0 0">La agenda va por orden de encargo: con la fecha te decimos tu situación real, sin promesas falsas.</p></div>
+          <div class="field"><label for="fLugar">¿Dónde será?</label><input id="fLugar" type="text" placeholder="Ej.: en la playa de La Tejita, en su restaurante de siempre…" autocomplete="off"></div>
+        </div>
       </div>
 
       <div class="wstep" data-step="2">
         <h3>¿Quién la recibe y quién la regala?</h3>
-        <p class="hint">Los nombres aparecerán en la letra tal como los escribas.</p>
+        <p class="hint">Los nombres aparecerán en la letra tal como los escribas. Y necesitamos tu contacto: es donde te confirmamos el encargo y te enviamos tu canción.</p>
         <div class="grid2">
-          <div class="field"><label for="fPara">La canción es para…</label><input id="fPara" type="text" placeholder="Ej.: Marta y Jorge" autocomplete="off"></div>
-          <div class="field"><label for="fDe">La regala…</label><input id="fDe" type="text" placeholder="Ej.: su hermana Lucía" autocomplete="off"></div>
+          <div class="field"><label for="fPara">La canción es para… *</label><input id="fPara" type="text" placeholder="Ej.: Marta y Jorge" autocomplete="off"></div>
+          <div class="field"><label for="fRelacion">¿Quién es para ti?</label><input id="fRelacion" type="text" placeholder="Ej.: mi hermana, mi mejor amiga, mi padre…" autocomplete="off"></div>
         </div>
-        <div class="field"><label for="fFecha">Fecha del gran día (si la hay)</label><input id="fFecha" type="date"><p class="hint" style="margin:.45rem 0 0">La agenda va por orden de encargo: con la fecha te decimos tu situación real, sin promesas falsas.</p></div>
+        <div class="grid2">
+          <div class="field"><label for="fDe">La regala… *</label><input id="fDe" type="text" placeholder="Ej.: su hermana Lucía" autocomplete="off"></div>
+          <div class="field"><label for="fContacto">Tu WhatsApp o tu email *</label><input id="fContacto" type="text" placeholder="Ej.: 600 123 456" autocomplete="off"></div>
+        </div>
       </div>
 
       <div class="wstep" data-step="3">
         <h3>Cuéntanos la historia</h3>
-        <p class="hint">Este es el corazón de la canción: cómo se conocieron, los lugares, la frase que siempre dice, ese recuerdo que hay que mencionar sí o sí.</p>
-        <div class="field"><label for="fHistoria">Vuestra historia</label><textarea id="fHistoria" placeholder="Ej.: Se conocieron en una guagua a Las Palmas en 2019. Él siempre dice «sin prisa, pero sin pausa». Cada verano vuelven al mismo chiringuito de…"></textarea></div>
+        <p class="hint">Este es el corazón de la canción: cómo se conocieron, los lugares, la frase que siempre dice, ese recuerdo que hay que mencionar sí o sí. Cuanto más nos des, más vuestra será.</p>
+        <div class="field"><label for="fHistoria">Vuestra historia *</label><textarea id="fHistoria" placeholder="Ej.: Se conocieron en una guagua a Las Palmas en 2019. Cada verano vuelven al mismo chiringuito de…"></textarea></div>
+        <div class="grid2" style="margin-top:1.1rem">
+          <div class="field"><label for="fFrase">Su frase de siempre</label><input id="fFrase" type="text" placeholder="Ej.: «sin prisa, pero sin pausa»" autocomplete="off"></div>
+          <div class="field"><label for="fMomento">El momento que no puede faltar</label><input id="fMomento" type="text" placeholder="Ej.: la noche del apagón en el puerto" autocomplete="off"></div>
+        </div>
+        <div class="field" style="margin-top:1.1rem"><label>¿Qué quieres que sienta al escucharla?</label>
+          <div class="chips" id="chSentir">
+            <button class="chip" type="button">💧 Que emocione</button>
+            <button class="chip" type="button">😂 Que haga reír</button>
+            <button class="chip" type="button">🥹 Lágrimas de felicidad</button>
+            <button class="chip" type="button">🎉 Que sea una fiesta</button>
+          </div>
+        </div>
         <div class="field" style="margin-top:1.1rem"><label>¿Quién la canta?</label>
           <div class="vozbox">Tu voz: <b id="wzVozTxt">aún sin elegir</b> · <a href="#cantantes">escuchar el dial ↑</a></div>
           <div class="chips" id="chCantante">
@@ -682,11 +745,12 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
             <button class="chip" type="button" data-voz="Que elija el estudio">Que elija el estudio</button>
           </div>
           <p class="hint" style="margin-top:.6rem">La voz se elige arriba, en el dial: cada voz suena entera, y tú cortas cuando lo tengas claro — esta me gusta, o siguiente.</p>
+        </div>
       </div>
 
       <div class="wstep" data-step="4">
         <h3>Tu encargo, en una tarjeta</h3>
-        <p class="hint">Elige el nivel, revisa el resumen y encarga. Así de simple.</p>
+        <p class="hint">Elige el nivel, revisa el resumen y envíalo: se abre WhatsApp con todo ya escrito. Así de simple.</p>
         <div class="field"><label>Tu nivel</label>
           <div class="chips" id="chTier">
             <button class="chip" type="button" data-price="25">Esencial · 25 €</button>
@@ -694,35 +758,19 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
             <button class="chip" type="button" data-price="89">Premium · 89 €</button>
           </div>
         </div>
-        <div class="urgency" id="wzUrgency">🗓️ Agenda limitada: 8 producciones al mes, por orden de encargo. Cuéntanos la fecha en el paso 2 y te decimos tu situación exacta.</div>
+        <div class="urgency" id="wzUrgency">🗓️ Agenda limitada: 8 producciones al mes, por orden de encargo. Cuéntanos la fecha en el paso 1 y te decimos tu situación exacta.</div>
         <div class="resumen" id="wzResumen"></div>
-        <div class="paybox" id="wzPay">
-          <h4>💳 Reserva tu plaza</h4>
-          <div class="grid2">
-            <div class="field"><label for="pNum">Número de tarjeta</label><input id="pNum" inputmode="numeric" placeholder="1234 5678 9012 3456" autocomplete="off"></div>
-            <div class="field"><label for="pNom">Nombre en la tarjeta</label><input id="pNom" placeholder="Tu nombre" autocomplete="off"></div>
+        <div class="sendrow" style="flex-direction:column;align-items:stretch">
+          <a class="btn btn-gold" id="wzWa" href="#" target="_blank" rel="noopener" style="width:100%;justify-content:center">💬 Enviar mi encargo por WhatsApp</a>
+          <div style="display:flex;gap:.7rem;flex-wrap:wrap">
+            <a class="btn btn-ghost" id="wzMail" href="#">✉️ Prefiero enviarlo por email</a>
+            <button class="btn btn-ghost" id="wzCopy" type="button">📋 Copiar mi encargo</button>
           </div>
-          <div class="grid2">
-            <div class="field"><label for="pExp">Caducidad</label><input id="pExp" placeholder="MM/AA" autocomplete="off"></div>
-            <div class="field"><label for="pCvc">CVC</label><input id="pCvc" inputmode="numeric" placeholder="123" autocomplete="off"></div>
-          </div>
-          <div class="total-line"><span>Total a pagar hoy</span><span class="t" id="wzTotal">49 €</span></div>
-          <button class="btn btn-gold" id="wzPayBtn" type="button" style="width:100%;justify-content:center;margin-top:1rem">🔒 Reservar mi plaza · 49 €</button>
-          <p class="nota">Pago de demostración del prototipo — en producción este botón abre el pago seguro de Stripe. Garantía Aliseo: si la letra no te emociona, la reescribimos sin coste.</p>
         </div>
-        <div class="sendrow">
-          <a class="btn btn-ghost" id="wzWa" href="#" target="_blank" rel="noopener">💬 Enviar por WhatsApp</a>
-          <a class="btn btn-ghost" id="wzMail" href="#">✉️ Prefiero enviarlo por email</a>
-          <button class="btn btn-ghost" id="wzCopy" type="button">📋 Copiar mi encargo</button>
-        </div>
+        <p class="nota">Al enviarlo se abre WhatsApp con tu encargo completo ya escrito: solo tienes que darle a enviar. El estudio te confirma la agenda y el pago en esa misma conversación. Garantía Aliseo: si la letra no te emociona, la reescribimos sin coste. Y tu historia es solo tuya: jamás compartimos las canciones de nuestros clientes.</p>
       </div>
 
-      <div class="wz-done" id="wzDone" style="display:none">
-        <div class="big">🎉</div>
-        <h3>¡Encargo recibido!</h3>
-        <p class="code" id="wzCode">ALISEO-0000</p>
-        <p style="color:rgba(247,241,229,.8);max-width:30em;margin:.8rem auto 0">Tu historia ya está en el estudio. El siguiente paso es nuestro: te escribimos con la letra de tu canción para que la apruebes antes de producir la versión final.</p>
-      </div>
+      <p class="wz-aviso" id="wzAviso" style="display:none"></p>
 
       <div class="wnav">
         <button class="btn-back" id="wzBack" type="button" style="visibility:hidden">← Atrás</button>
@@ -735,11 +783,11 @@ footer .f-cta p{color:#F3E9CF;font-size:1.05rem}
 
 <section class="captacion">
   <div class="wrap rv">
-    <h2>¿Quieres oír canciones reales antes de decidir?</h2>
-    <p>Te mandamos ejemplos de canciones ya entregadas — con su historia y la reacción de quien la recibió — y juzgas tú mismo si esto emociona o no.</p>
+    <h2>Nos adaptamos a tus gustos, no al revés</h2>
+    <p>Aquí no eliges de un catálogo cerrado: eliges la voz a oído entre las 21 de la casa, nos cuentas tu historia y la canción se hace a tu manera — tu tono, tu momento, tus palabras. Si ninguna voz te encaja, traes la tuya. Y lo que es de nuestros clientes, es solo suyo: jamás compartimos sus canciones, ni sus historias, ni sus reacciones. La tuya será igual de privada, e igual de tuya.</p>
     <div class="row">
-      <a class="btn btn-gold" href="https://wa.me/34000000000?text=Hola%20Aliseo%2C%20m%C3%A1ndame%20los%20ejemplos%20de%20canciones%20%F0%9F%8E%B5" target="_blank" rel="noopener">💬 Pedir los ejemplos por WhatsApp</a>
-      <a class="btn btn-ghost" href="mailto:hola@aliseo.studio?subject=Quiero%20los%20ejemplos%20de%20Aliseo&amp;body=Hola%2C%20quiero%20escuchar%20ejemplos%20de%20canciones%20reales%20antes%20de%20encargar%20la%20m%C3%ADa.">✉️ Pedirlos por email</a>
+      <a class="btn btn-gold" href="#cantantes">🎧 Escuchar las 21 voces</a>
+      <a class="btn btn-ghost" href="https://wa.me/34000000000?text=Hola%20Aliseo%2C%20tengo%20una%20idea%20para%20una%20canci%C3%B3n%20%F0%9F%8E%B5" target="_blank" rel="noopener">💬 Contarnos tu idea por WhatsApp</a>
     </div>
   </div>
 </section>
@@ -839,7 +887,7 @@ function chipGroup(id, key){
     WZ[key] = b.getAttribute("data-voz") || b.textContent.replace(/^[^A-Za-zÀ-ÿ]+/, "").trim();
   });
 }
-chipGroup("chOcasion","ocasion"); chipGroup("chCantante","cantante");
+chipGroup("chOcasion","ocasion"); chipGroup("chCantante","cantante"); chipGroup("chSentir","sentir");
 document.getElementById("chCantante").addEventListener("click", function(){
   var t = document.getElementById("wzVozTxt"); if(t && WZ.cantante) t.textContent = WZ.cantante;
 });
@@ -937,34 +985,59 @@ function wzShow(n){
   if(n === 4) wzResumen();
 }
 function wzTexto(){
-  var para = document.getElementById("fPara").value.trim(),
-      de = document.getElementById("fDe").value.trim(),
-      fecha = document.getElementById("fFecha").value.trim(),
-      hist = document.getElementById("fHistoria").value.trim();
+  function v(id){ return document.getElementById(id).value.trim(); }
+  var fecha = v("fFecha"), fechaTxt = "—";
+  if(fecha){ fechaTxt = new Date(fecha + "T00:00:00").toLocaleDateString("es-ES", { day:"numeric", month:"long", year:"numeric" }); }
   var L = [];
   L.push("🎵 MI ENCARGO DE CANCIÓN — Aliseo.studio");
   L.push("");
   L.push("Ocasión: " + (WZ.ocasion || "—"));
-  L.push("Para: " + (para || "—"));
-  L.push("De parte de: " + (de || "—"));
+  L.push("Fecha del gran día: " + fechaTxt);
+  L.push("Lugar: " + (v("fLugar") || "—"));
+  L.push("");
+  L.push("Para: " + (v("fPara") || "—"));
+  L.push("Relación: " + (v("fRelacion") || "—"));
+  L.push("La regala: " + (v("fDe") || "—"));
+  L.push("Contacto: " + (v("fContacto") || "—"));
+  L.push("");
   L.push("Voz: " + (WZ.cantante || "—"));
+  L.push("Que sienta: " + (WZ.sentir || "—"));
+  L.push("Su frase de siempre: " + (v("fFrase") || "—"));
+  L.push("El momento que no puede faltar: " + (v("fMomento") || "—"));
   L.push("");
   L.push("La historia:");
-  L.push(hist || "(aún por contar)");
+  L.push(v("fHistoria") || "(aún por contar)");
+  L.push("");
+  L.push("Nivel: " + (WZ.tier || "Completa · 49 €"));
   return L.join("\n");
 }
 function wzResumen(){
+  wzUrgenciaTexto();
   var t = wzTexto();
   document.getElementById("wzResumen").textContent = t;
-  var subj = "Mi canción — " + (WZ.ocasion || "encargo") + " · Aliseo.studio";
+  var subj = "Mi canción — " + (WZ.ocasion || "encargo") + " (" + (WZ.tier || "") + ") · Aliseo.studio";
   document.getElementById("wzMail").href = "mailto:hola@aliseo.studio?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(t);
   document.getElementById("wzWa").href = "https://wa.me/34000000000?text=" + encodeURIComponent(t);
 }
+function wzAvisar(txt, el){
+  var av = document.getElementById("wzAviso");
+  av.textContent = txt; av.style.display = "block";
+  if(el){ el.classList.remove("shake"); void el.offsetWidth; el.classList.add("shake"); if(el.focus) el.focus(); }
+}
 document.getElementById("wzNext").addEventListener("click", function(){
+  document.getElementById("wzAviso").style.display = "none";
+  function v(id){ return document.getElementById(id).value.trim(); }
   if(WZ.step === 1 && !WZ.ocasion){
-    var box = document.getElementById("chOcasion");
-    box.classList.remove("shake"); void box.offsetWidth; box.classList.add("shake");
-    return;
+    wzAvisar("Elige la ocasión para continuar — es el primer dato de tu canción.", document.getElementById("chOcasion")); return;
+  }
+  if(WZ.step === 2){
+    if(!v("fPara")){ wzAvisar("Te falta lo principal: ¿para quién es la canción?", document.getElementById("fPara")); return; }
+    if(!v("fDe")){ wzAvisar("¿Y quién la regala? Tu nombre va en la dedicatoria.", document.getElementById("fDe")); return; }
+    if(!v("fContacto")){ wzAvisar("Sin tu WhatsApp o email no podemos confirmarte el encargo ni enviarte la canción.", document.getElementById("fContacto")); return; }
+  }
+  if(WZ.step === 3){
+    if(!v("fHistoria")){ wzAvisar("La historia es el corazón de la canción: cuéntanosla aunque sea en dos frases.", document.getElementById("fHistoria")); return; }
+    if(!WZ.cantante){ wzAvisar("Te falta la voz: escúchala en el dial de arriba o marca «Que elija el estudio».", document.getElementById("chCantante")); return; }
   }
   if(WZ.step < 4) wzShow(WZ.step + 1);
 });
@@ -976,7 +1049,7 @@ document.getElementById("wzCopy").addEventListener("click", function(){
 });
 
 /* ---------- nivel / urgencia / pago ---------- */
-WZ.tier = "Completa \u00b7 49 \u20ac"; WZ.price = 49;
+WZ.tier = "Completa \u00b7 49 \u20ac"; WZ.price = 49; WZ.sentir = "";
 (function(){
   var box = document.getElementById("chTier");
   box.addEventListener("click", function(e){
@@ -984,8 +1057,6 @@ WZ.tier = "Completa \u00b7 49 \u20ac"; WZ.price = 49;
     box.querySelectorAll(".chip").forEach(function(c){ c.classList.remove("sel"); });
     b.classList.add("sel");
     WZ.tier = b.textContent.trim(); WZ.price = +b.getAttribute("data-price");
-    document.getElementById("wzTotal").textContent = WZ.price + " \u20ac";
-    document.getElementById("wzPayBtn").textContent = "\uD83D\uDD12 Reservar mi plaza \u00b7 " + WZ.price + " \u20ac";
     wzResumen();
   });
   document.querySelectorAll("[data-tier]").forEach(function(a){
@@ -995,8 +1066,6 @@ WZ.tier = "Completa \u00b7 49 \u20ac"; WZ.price = 49;
         if(c.textContent.trim() === v){ c.classList.add("sel"); WZ.tier = v; WZ.price = +c.getAttribute("data-price"); }
         else c.classList.remove("sel");
       });
-      document.getElementById("wzTotal").textContent = WZ.price + " \u20ac";
-      document.getElementById("wzPayBtn").textContent = "\uD83D\uDD12 Reservar mi plaza \u00b7 " + WZ.price + " \u20ac";
     });
   });
 })();
@@ -1015,43 +1084,13 @@ function wzUrgenciaTexto(){
   el.textContent = txt;
   return "Gran día: " + fEv + " (en " + dias + " días)";
 }
-var _wzResumen0 = wzResumen;
-wzResumen = function(){
-  _wzResumen0();
-  var urg = wzUrgenciaTexto();
-  var t = wzTexto();
-  document.getElementById("wzResumen").textContent = t + "\n\nNivel: " + WZ.tier + (urg ? "\n" + urg : "");
-  var subj = "Mi canci\u00f3n \u2014 " + (WZ.ocasion || "encargo") + " (" + WZ.tier + ") \u00b7 Aliseo.studio";
-  document.getElementById("wzMail").href = "mailto:hola@aliseo.studio?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(document.getElementById("wzResumen").textContent);
-};
-document.getElementById("pNum").addEventListener("input", function(){
-  this.value = this.value.replace(/[^0-9]/g, "").slice(0, 16).replace(/(.{4})/g, "$1 ").trim();
-});
-document.getElementById("wzPayBtn").addEventListener("click", function(){
-  var num = document.getElementById("pNum");
-  if(num.value.replace(/\s/g, "").length < 12){
-    num.classList.remove("shake"); void num.offsetWidth; num.classList.add("shake"); num.focus(); return;
-  }
-  var b = this; b.disabled = true; b.textContent = "Procesando pago\u2026";
-  setTimeout(function(){
-    document.querySelectorAll(".wstep").forEach(function(x){ x.classList.remove("on"); });
-    document.querySelector(".wnav").style.display = "none";
-    document.querySelector(".progress").style.display = "none";
-    document.querySelector(".stepmeta").style.display = "none";
-    document.getElementById("wzCode").textContent = "ALISEO-" + Math.floor(1000 + Math.random() * 9000);
-    document.getElementById("wzDone").style.display = "block";
-    document.getElementById("crear").scrollIntoView({ behavior:"smooth", block:"center" });
-  }, 1100);
-});
-
-
 /* (manejador data-cantante: el de arriba, junto a chipGroup) */
 
 /* ---------- cortes del himno en el hero ---------- */
 (function(){
   var audios = Array.prototype.slice.call(document.querySelectorAll(".hp-audio"));
   var btns = Array.prototype.slice.call(document.querySelectorAll(".hp-play"));
-  function label(b, on){ b.textContent = on ? "\u275a\u275a Detener" : b.getAttribute("data-t"); }
+  function label(b, on){ b.textContent = on ? (b.classList.contains("hp-mini") ? "\u275a\u275a" : "\u275a\u275a Detener") : b.getAttribute("data-t"); }
   btns.forEach(function(b){ b.setAttribute("data-t", b.textContent); });
   function stopHp(except){
     audios.forEach(function(a, i){ if(i !== except){ a.pause(); } });
